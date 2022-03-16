@@ -29,7 +29,6 @@ public class Email {
         // Combine elements to generate email
         email = fristName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
     }
-
     // Ask for the department
     private String setDeparment(){
         System.out.println("New Worker: " + fristName + " , Department Codes:\n1 for Sales\n2 for development\n3 for Accounting\n0 for none\nEnter department code:");
@@ -75,9 +74,17 @@ public class Email {
         this.password = password;
     }
 
-    public int getMailboxCapacity(){ return mailboxCapacity; }
-    public String getAlternateEmail(){ return alternateEmail; }
-    public String getPassword() { return  password; }
+    public int getMailboxCapacity(){
+        return mailboxCapacity;
+    }
+
+    public String getAlternateEmail(){
+        return alternateEmail;
+    }
+
+    public String getPassword() {
+        return  password;
+    }
 
     public String showInfo(){
         return "\nDISPLAY NAME: " + fristName + " " + lastName +
